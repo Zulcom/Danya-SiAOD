@@ -19,10 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5E70AE76-9223-4D2B-B7A1-81849FA6A0DB}</ProjectGuid>
-    <RootNamespace>DanyaSiAOD</RootNamespace>
+    <ProjectGuid>{5F8452D1-E5D0-4128-B455-6E1D3D36C87E}</ProjectGuid>
+    <RootNamespace>Lab2_6</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>Lab2_8</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -111,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lab2_8.cpp" />
+    <ClCompile Include="Lab2_6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
