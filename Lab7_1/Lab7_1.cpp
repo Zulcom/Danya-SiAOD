@@ -13,6 +13,7 @@ int main() {
 		sum += temp;
 		counter++;
 	}
+	in.close();
 	cout << "Sum: " << sum << " AVG:" << sum / counter <<endl;
 	system("pause.exe");
 	return 0;
