@@ -18,7 +18,9 @@ vector<vector<int>> prodMatrix(vector<vector<int>> p1, vector<vector<int>> p2) {
 	{
 		res[row].resize(n);
 		fill(res[row].begin(), res[row].end(), 0);
-		for (int col = 0; col < n; col++) for (int inner = 0; inner < n; inner++) res[row][col] += p1[row][inner] * p2[inner][col]; // Multiply the row of A by the column of B to get the row, column of product.
+		for (int col = 0; col < n; col++)
+			for (int inner = 0; inner < n; inner++) 
+				res[row][col] += p1[row][inner] * p2[inner][col]; // Multiply the row of A by the column of B to get the row, column of product.
 	}
 	return res;
 }
@@ -84,15 +86,15 @@ int main() {
 	cout << "Матрица связанности:" << endl;
 	/*Суммируем матрицы в степени 1-5*/
 	vector<vector<int>> comminicationMatrix =
-											sumMatrix(
-													  sumMatrix(
-																sumMatrix(
-																			sumMatrix(
-																					m,
-																					powMatrix(m, 2), n),
-																		  powMatrix(m, 3), n),
-															    powMatrix(m, 4), n),
-													  powMatrix(m, 5), n);
+					sumMatrix(
+								sumMatrix(
+										sumMatrix(
+													sumMatrix(
+															m,
+															powMatrix(m, 2), n),
+													powMatrix(m, 3), n),
+										powMatrix(m, 4), n),
+								powMatrix(m, 5), n);
 	
 	for (int i = 0; i < n; i++) 
 		for (int j = 0; j < n; j++)
